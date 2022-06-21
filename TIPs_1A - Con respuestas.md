@@ -1,61 +1,66 @@
-# TIPs - Grupo A - Entrevista n°1
+# TIPs - Grupo B - Entrevista n°1
 
 Recuerden que esto es una herramienta para practicar como seria una entrevista real<br>
 Bajo ningun punto de vista queremos su compañero pase un mal momento, es simplemente guiarlo a traves de las preguntas<br>
 Esto tampoco quiere decir que hay que darle las respuestas facilmente, se lo puede aconsejar, se lo puede guiar o incluso darle pistas
 
 ## Preguntas teoricas:
-### 1)¿Cuál es la diferencia entre la lista y tupla?
+### 1)¿Cuáles son las reglas para las variables locales y globales en Python?
 
-Una lista puede ser alterada, no así una tupla. 
-Una tupla puede ser utilizada como clave en un diccionario, no así una lista.
-Una tupla consume menos espacio que una lista.
 
-### 2)¿Cuántos tipos de datos nativos existen en el lenguaje Python?
+Si una variable es definida fuera de una función entonces es implícitamente global.
+Si la variable se asigna a un nuevo valor dentro de la función significa que es local. 
+Si queremos que sea global tenemos que definirla explícitamente como global.
+La variable referenciada dentro de la función están implícitas como global
 
-El lenguaje Python posee cinco tipos diferentes de datos: 
-	1.string
-	2.lista
-	3.número
-	4.diccionario
-	5.tuple
+### 2) ¿Cuántos tipos de datos existen en Pandas?
 
-### 3)¿Si la lista 1 es [4, 6, 8, 1, 0, 3], que seria la lista 1 [-1]?
-"-1" siempre se refiere al último índice de la lista, por lo tanto la respuesta seria 3.
+Pandas dispone de tres estructuras de datos diferentes: <br>
+	1.Series: Estructura de una dimensión.<br>
+	2.DataFrame: Estructura de dos dimensiones (tablas)<br>
+	3.Panel: Estructura de tres dimensiones (cubos).<br>
+
+### 3) ¿Qué es un "diccionario"?
+¿Saben que es un tipo de datos integrados? Un diccionario es exactamente eso.
+
+Los diccionarios están compuestos de claves y sus valores correspondientes. 
+Aquí tienes un ejemplo:
+
+dict={'Car':'Ford','Type':'Mustang','Year':'1967'}<br>
+print dict[Car]<br>
+Ford<br>
+print dict[Type]<br>
+Mustang<br>
+print dict[Year]<br>
+1967<br>
+
 
 
 ## Practico: 
-Escribe un código que dado un numero entero positivo ingresado por teclado sume/reste los numeros hasta el 0 (cero) teniendo en cuenta estas consideraciones:<br>
-*Si el numero es par, suma<br>
-*Si el numero es impar, resta<br>
+Escribir un programa en Python para comprobar si una secuencia es un Palíndromo.
 
-Informar el valor final y la lista de numeros pares ordernados<br>
-
-Ejemplo: <br>
-Numero ingresado = 5<br>
-
-5--> resta <br>
-4--> suma<br>
-3--> resta<br>
-2--> suma<br>
-1--> resta<br>
-valor final (-3) Se forma por (-5 +4 -3 +2 -1) <br>
-
-El programa debe devolver  (-3) y [2,4] <br>
+ Escribir un programa en Python para comprobar si una secuencia es un Palíndromo.
+Opcion #1
+```
+a=input("introduzca una secuencia: 	")
+b=a[::-1]
+if a==b:
+ print("palindromo")
+ ptint(a)
+else:
+ print("No es palindromo")
+ ```
+ 
+Opcion #2 
 
 ```
-n=int(input("Cantidad de numeros: "))  
-suma = 0 #inicializo la suma
-par=[]
-impar=[]
-while n > 0:
-   if n % 2 == 0:
-    suma = suma + n
-    par.append(n)
-   else:
-    suma = suma -n 
-   n = n -1
-   par.sort()
-print(suma)
-print(par)
+a_string =input("introduzca una secuencia: ")
+def palindrome(string):
+    string = string.lower().replace(' ', '')
+    reversed = ''
+    for i in range(len(string), 0, -1):
+        reversed += string[i-1]
+    return string == reversed
+print(palindrome(a_string))
 ```
+
