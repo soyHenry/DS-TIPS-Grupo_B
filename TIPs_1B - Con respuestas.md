@@ -39,7 +39,7 @@ print dict[Year]<br>
 ## Practico: 
 Escribir un programa en Python para comprobar si una secuencia es un Palíndromo.
 
- Escribir un programa en Python para comprobar si una secuencia es un Palíndromo.
+
 Opcion #1
 ```
 a=input("introduzca una secuencia: 	")
