@@ -6,7 +6,7 @@ Esto tampoco quiere decir que hay que darle las respuestas facilmente, se lo pue
 
 ## Preguntas teoricas:
 
-* Pregunta 8 ¿Cuáles son las ventajas y desventajas de las vistas en la base de datos?
+* Pregunta 6 ¿Cuáles son las ventajas y desventajas de las vistas en la base de datos?
  Ventajas de las vistas:
 
 Como no hay una ubicación física donde se almacenan los datos en la vista, genera resultados sin desperdiciar recursos.
@@ -16,22 +16,22 @@ Desventajas de las vistas:
 La vista se vuelve irrelevante si descartamos una tabla relacionada con esa vista.
 Se ocupa mucho espacio de memoria cuando se crea la vista para tablas grandes.
 
-* Pregunta 10: ¿Qué entiendes por Join?
+* Pregunta 2: ¿Qué entiendes por Join?
 
   Unir es el proceso de derivar la relación entre diferentes tablas combinando columnas de una o más tablas que tienen valores comunes en cada una. Cuando una tabla se une a sí misma, se conoce como Self Join.
 
-* Pregunta 11: Diferenciar entre índice 'Clúster' y 'No clúster'.
+* Pregunta 3: Diferenciar entre índice 'Clúster' y 'No clúster'.
 
   El índice agrupado altera la tabla y reordena la forma en que se almacenan los registros en la tabla. La recuperación de datos se acelera mediante el uso del índice agrupado.
 
 Un índice no agrupado altera los registros que se almacenan en la tabla, pero crea un objeto completamente diferente dentro de la tabla.
 
-* Pregunta 12: ¿Qué es la partición de bases de datos?
+* Pregunta 4: ¿Qué es la partición de bases de datos?
 
 El particionamiento de la base de datos es el proceso de particionar tablas, índices en partes más pequeñas para administrar y acceder a los datos en un nivel más fino.
 Este proceso de partición reduce el costo de almacenar una gran cantidad de datos y mejora el rendimiento y la capacidad de administración.
 
-* Pregunta 13:Explique la importancia del particionamiento de la base de datos.
+* Pregunta 5:Explique la importancia del particionamiento de la base de datos.
 
  La importancia de la partición de la base de datos es:
 
@@ -41,7 +41,7 @@ Actúa como una herramienta clave para los sistemas de construcción con requisi
 Permite acceder a gran parte de una única partición.
 
 
-* Pregunta 14: Diferenciar entre los comandos 'DELETE', 'TRUNCATE' y 'DROP'.
+* Pregunta 6: Diferenciar entre los comandos 'DELETE', 'TRUNCATE' y 'DROP'.
 
 Responder: Después de la ejecución de 'ELIMINAR' operación, las declaraciones COMMIT y ROLLBACK se pueden realizar para recuperar los datos perdidos.
 
