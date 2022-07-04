@@ -99,7 +99,7 @@ plt.show()
 * 6 Mostrar por pantalla el porcentaje de personas que sobrevivieron y murieron
 print(df_titanic['Survived'].value_counts()/df_titanic['Survived'].count() * 100)
 
-# Alternativa
+#Alternativa
 print(df_titanic['Survived'].value_counts(normalize=True) * 100)
 
 
