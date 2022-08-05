@@ -39,10 +39,10 @@ Escribir un programa en Python que, dado un valor máximo que se le pide al usua
 
 ### Respuesta propuesta
 
-maximo = int(input("Por favor, ingrese un valor máximo : "))
+maximo = int(input("Por favor, ingrese un valor máximo : "))<br>
 diccionario = {}
 
-for x in range(1, maximo + 1):
-    diccionario[x] = x * x
+for x in range(1, maximo + 1):<br>
+    diccionario[x] = x * x<br>
 
 print("\nDiccionario = ", diccionario)
